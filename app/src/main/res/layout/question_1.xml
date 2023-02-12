@@ -82,5 +82,29 @@
 
     </RadioGroup>
 
+    <Button
+        android:id="@+id/next"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Next Question"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="100dp"
+        android:background="@color/green_forest"
+        />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Quit"
+        android:layout_below="@id/next"
+        android:layout_marginTop="20dp"
+        android:background="@color/red"
+        />
+
 
 </RelativeLayout>
