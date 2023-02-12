@@ -2,6 +2,7 @@
     <string name="app_name">Quiz App</string>
     <string name="developer1_name">Thomas Biju</string>
     <string name="developer1_email">thomasbjuxyz@gmail.com</string>
-    <string name="developer2_name">Grishma Shah</string>
-    <string name="developer2_email">grishmashahxyz@gmail.com</string>
+    <string name="developer2_name">Developer 2</string>
+    <string name="developer2_email">developer2xyz@gmail.com</string>
+    <string name="question_1_text">Which method can be defined only once in a program?</string>
 </resources>

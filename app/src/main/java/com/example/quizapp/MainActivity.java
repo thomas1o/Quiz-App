@@ -18,11 +18,18 @@ public class MainActivity extends AppCompatActivity {
         start_button = (Button)findViewById(R.id.start_button);
         about_button = (Button)findViewById(R.id.about_button);
 
+        start_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Your quiz has started!", Toast.LENGTH_SHORT).show();
+                setContentView(R.layout.question_1);
+            }
+        });
+
         //to change page into about page
         about_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(MainActivity.this, "Quiz has started", Toast.LENGTH_SHORT).show();
                 setContentView(R.layout.about_page);
             }
         });
