@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
+        android:id="@+id/quiz_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="QUIZ APP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/enter_your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/enter_your_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/green_forest"
+        android:text="START"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/blue"
+        android:text="ABOUT"
+        android:textSize="24dp" />
+
+
+</RelativeLayout>

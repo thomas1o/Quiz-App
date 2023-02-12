@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/developers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/developers_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPERS"
+        android:textColor="@color/blue_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thomas Biju"
+        android:layout_below="@+id/developers_heading"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/email_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/developer1_email"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grishma Shah"
+        android:layout_below="@+id/email_1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/email_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grishmashahxyz@gmail.com"
+        android:layout_below="@+id/name_2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/black"
+        />
+
+
+
+</RelativeLayout>
