@@ -12,6 +12,29 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
+            android:name=".FinalScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Question5Actvity"
+            android:exported="false" />
+        <activity
+            android:name=".Question4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Question3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Question2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Question1Activity"
+            android:exported="false"
+            android:label="@string/title_activity_question1"
+            android:theme="@style/Theme.QuizApp.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

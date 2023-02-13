@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/question_1_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    tools:context=".Question4Activity">
 
     <TextView
         android:id="@+id/acknowledge_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:text="Hello"
         android:textAlignment="center"
         android:textColor="@color/teal_200"
@@ -23,9 +27,9 @@
         android:layout_below="@+id/acknowledge_text"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="40dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_marginBottom="20dp"
-        android:text="@string/question_1_text"
+        android:text="@string/question_4_text"
         android:textColor="@color/black"
         android:textSize="20dp" />
 
@@ -35,9 +39,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/question_1"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-    >
+        >
 
         <!--adding a radio button -->
         <RadioButton
@@ -46,7 +50,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:padding="4dp"
-            android:text="finalize method"
+            android:text="Import pkg."
             android:textSize="20sp" />
 
         <!--adding a radio button -->
@@ -56,7 +60,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:padding="4dp"
-            android:text="main method"
+            android:text="importpkg."
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -66,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="4dp"
-            android:text="static method"
+            android:text="Import pkg"
             android:textAlignment="center"
             android:textSize="20sp" />
 
@@ -76,14 +80,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="4dp"
-            android:text="private method"
+            android:text="import pkg."
             android:textAlignment="center"
             android:textSize="20sp" />
 
     </RadioGroup>
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/next_button"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -95,16 +99,15 @@
         />
 
     <Button
-        android:id="@+id/quit"
+        android:id="@+id/quit_button"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:text="Quit"
-        android:layout_below="@id/next"
+        android:layout_below="@id/next_button"
         android:layout_marginTop="20dp"
         android:background="@color/red"
         />
-
 
 </RelativeLayout>

@@ -5,4 +5,19 @@
     <string name="developer2_name">Developer 2</string>
     <string name="developer2_email">developer2xyz@gmail.com</string>
     <string name="question_1_text">Which method can be defined only once in a program?</string>
+    <string name="question_2_text">Which keyword is used by method to refer to the current object that invoked it?</string>
+    <string name="question_3_text">Which of these access specifiers can be used for an interface?</string>
+    <string name="question_4_text">Which of the following is correct way of importing an entire package pkg?</string>
+    <string name="question_5_text">What is the return type of Constructors?</string>
+    <string name="enterYourName"> </string>
+    <string name="title_activity_question1">Question1Activity</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
