@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FinalScoreActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score Sheet"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="55dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:background="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Correct answers: "
+        android:layout_marginTop="200dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:background="@color/red"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correct"
+        android:layout_centerHorizontal="true"
+        android:text="Wrong answers: "
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:background="@color/green_forest"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/final_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wrong"
+        android:layout_centerHorizontal="true"
+        android:text="Final Score: "
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:background="@color/yellow"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_marginTop="250dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/final_score"
+        android:layout_centerHorizontal="true"
+        android:text="Main Menu"
+        android:background="@drawable/rect_rounded_button_blue"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

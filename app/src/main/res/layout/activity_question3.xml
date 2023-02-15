@@ -14,9 +14,9 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:text="Hello"
+        android:text="Hello "
         android:textAlignment="center"
-        android:textColor="@color/teal_200"
+        android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -95,7 +95,8 @@
         android:text="Next Question"
         android:layout_below="@id/radioGroup"
         android:layout_marginTop="100dp"
-        android:background="@color/green_forest"
+        android:background="@drawable/rect_rounded_button_green"
+        android:textStyle="bold"
         />
 
     <Button
@@ -108,5 +109,6 @@
         android:layout_below="@id/next_button"
         android:layout_marginTop="20dp"
         android:background="@color/red"
+        android:textStyle="bold"
         />
 </RelativeLayout>

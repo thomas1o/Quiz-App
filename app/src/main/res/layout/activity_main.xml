@@ -18,6 +18,7 @@
         android:textColor="@color/black"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -25,11 +26,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
+        android:textSize="20dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:hint="Enter Your Name"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textStyle="bold"
         />
 
     <Button
@@ -39,9 +42,10 @@
         android:layout_below="@id/enter_your_name"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:background="@color/green_forest"
         android:text="START"
-        android:textSize="24dp" />
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:background="@drawable/rect_rounded_button_green"/>
 
     <Button
         android:id="@+id/about_button"
@@ -51,6 +55,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:background="@color/blue"
+        android:textStyle="bold"
         android:text="ABOUT"
         android:textSize="24dp" />
 

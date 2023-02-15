@@ -16,19 +16,24 @@
             android:exported="false" />
         <activity
             android:name=".Question5Actvity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.QuizApp.NoActionBar"/>
         <activity
             android:name=".Question4Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.QuizApp.NoActionBar"/>
         <activity
             android:name=".Question3Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.QuizApp.NoActionBar"/>
         <activity
             android:name=".Question2Activity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.QuizApp.NoActionBar"/>
         <activity
             android:name=".AboutPageActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.QuizApp.NoActionBar"/>
         <activity
             android:name=".Question1Activity"
             android:exported="false"
