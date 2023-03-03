@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,7 +16,9 @@ public class Question1Activity extends AppCompatActivity {
 
     Button quitButton, question_2;
     TextView acknowledgment, number;
-    String name, num;
+    String name;
+    int num, a;
+    RadioButton o2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class Question1Activity extends AppCompatActivity {
         quitButton = (Button)findViewById(R.id.quit_button);
         acknowledgment = (TextView) findViewById(R.id.acknowledge_text);
         number = (TextView)findViewById(R.id.number);
+        o2 = (RadioButton)findViewById(R.id.q3_o2);
 
 
         Intent question1 = getIntent();
@@ -50,8 +54,14 @@ public class Question1Activity extends AppCompatActivity {
         question_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                num = number.toString();
-//                int n = Integer.parseInt(num);
+                o2.setOnClickListener(new View.OnClickListener() {
+                                          @Override
+                                          public void onClick(View view) {
+                                              a = 1;
+                                          }
+                                      });
+                if(a == 1)
+                    Toast.makeText(Question1Activity.this, "CORRECT", Toast.LENGTH_SHORT).show();
                 Intent question1 = new Intent(getApplicationContext(), Question2Activity.class);
                 question1.putExtra("name",name);
                 startActivity(question1);

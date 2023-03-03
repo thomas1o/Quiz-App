@@ -28,10 +28,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 name = editName.getText().toString();
-                Intent question1 = new Intent(getApplicationContext(), Question1Activity.class);
-                question1.putExtra("name",name);
-                Toast.makeText(MainActivity.this, "Your quiz has started!", Toast.LENGTH_SHORT).show();
-                startActivity(question1);
+                if(!name.isEmpty())
+                {
+                    Intent question1 = new Intent(getApplicationContext(), Question1Activity.class);
+                    question1.putExtra("name",name);
+                    Toast.makeText(MainActivity.this, "Your quiz has started!", Toast.LENGTH_SHORT).show();
+                    startActivity(question1);
+                }
+                else
+                Toast.makeText(MainActivity.this, "Please Enter your name!", Toast.LENGTH_SHORT).show();
             }
         });
 
